@@ -7,3 +7,4 @@ PRTG 通过钉钉机器人发送通知
 ```
 set-ExecutionPolicy RemoteSigned
 ```
+3. 打开<code>PRTG</code>后台，点击**设置**菜单项。
