@@ -54,4 +54,4 @@ $postDingTalkMessage = ConvertTo-Json -Depth 3 ([pscustomobject]@{
 
 $postDingTalkMessage | Out-File utf8 -FilePath DingTalk.log
 $postDingTalkMessage.text  | Out-File  utf8 -FilePath DingTalk.log -Append
-Invoke-RestMethod -Method Post -ContentType 'application/json;charset=utf-8' -Uri $SlackWebHook -Body $postDingTalkMessage  | Out-File  utf8 -FilePath DingTalk.log -Append
+Invoke-RestMethod -Method Post -ContentType 'application/json;charset=utf-8' -Uri $DingTalkWebHook -Body $postDingTalkMessage  | Out-File  utf8 -FilePath DingTalk.log -Append
